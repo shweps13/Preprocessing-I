@@ -151,7 +151,10 @@ header {
   padding: 2% 1.5% 2% 0;
 }
 header nav {
-  width: 40%;
+  display: inline;
+  width: 60%;
+  text-align: right;
+  margin-right: 3.5%;
 }
 header nav a {
   font-size: 2rem;
