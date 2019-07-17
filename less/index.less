@@ -86,11 +86,30 @@ header {
 		width: 60%;
 		text-align: right;
 		margin-right: 3.5%;
+		
 		a {
 			font-size: 2rem;
 			text-decoration: none;
 			color: @linkcolor - 50%;
 			margin-left: 5%;
+		}
+		
+	}
+	@media screen and (max-width: 500px) {
+		flex-direction: column;
+		margin-top: 1%;
+		justify-content: center;
+		width: 100%;
+		nav {
+			display: flex;
+			margin-left: 0; 
+			flex-direction: column;
+			width: 100%;
+		}
+		a {
+			display: flex;
+		justify-content: center;
+		margin: 3% 0;
 		}
 	}
 }
@@ -128,6 +147,41 @@ header {
 			font-size: 2rem;
 		}
 	}
+	@media screen and (max-width: 500px) {
+		.selfie {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		}
+		h3 {
+			font-size: 2rem;
+			text-align: center;
+			margin: 3% 0;
+		}
+		h2 {
+			font-size: 3rem;
+			text-align: center;
+			margin: 3% 0;
+		}
+		.downtop{
+			p {
+				text-align: center;	
+			}
+			a[type="button"] {
+				display: flex;
+				width: 60%;
+				border: 1px solid white;
+				padding: 1%;
+				margin: 0 0 1% 3%;
+				text-decoration: none;
+				justify-content: center;
+				margin-left: 20%;
+				
+			}
+		}
+		
+	}
+
 }
 
 content {
@@ -204,6 +258,21 @@ content {
 				background-color: white;
 				.nobord();
 			}	
+		}
+	}
+	@media screen and (max-width: 500px) {
+		.upmid {
+			flex-direction: column;
+			justify-content: center;
+		}
+		.leftmid, .rightmid {
+			width: 100% !important;
+		}
+		.leftmid {
+			margin-bottom: 5%;	
+		}
+		.downmid {
+			margin-top: 8%;	
 		}
 	}
 }

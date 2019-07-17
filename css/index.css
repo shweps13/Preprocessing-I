@@ -162,6 +162,25 @@ header nav a {
   color: #559cb9;
   margin-left: 5%;
 }
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    margin-top: 1%;
+    justify-content: center;
+    width: 100%;
+  }
+  header nav {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  header a {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+  }
+}
 .top-content {
   background-color: #e7e7e7;
   margin: 0 5% 0 5%;
@@ -196,6 +215,36 @@ header nav a {
   display: block;
   text-align: center;
   font-size: 2rem;
+}
+@media screen and (max-width: 500px) {
+  .top-content .selfie {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .top-content h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 3% 0;
+  }
+  .top-content h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 3% 0;
+  }
+  .top-content .downtop p {
+    text-align: center;
+  }
+  .top-content .downtop a[type="button"] {
+    display: flex;
+    width: 60%;
+    border: 1px solid white;
+    padding: 1%;
+    margin: 0 0 1% 3%;
+    text-decoration: none;
+    justify-content: center;
+    margin-left: 20%;
+  }
 }
 content .upmid {
   display: flex;
@@ -268,6 +317,22 @@ content .downmid table th {
   background-color: white;
   border-right: none;
   border-left: none;
+}
+@media screen and (max-width: 500px) {
+  content .upmid {
+    flex-direction: column;
+    justify-content: center;
+  }
+  content .leftmid,
+  content .rightmid {
+    width: 100% !important;
+  }
+  content .leftmid {
+    margin-bottom: 5%;
+  }
+  content .downmid {
+    margin-top: 8%;
+  }
 }
 footer {
   display: inline-block;
