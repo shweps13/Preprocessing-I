@@ -54,6 +54,35 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
+
+@linkcolor: skyblue;
+@linkfont: 'Quicksand', sans-serif;
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	padding: 2% 1.5% 2% 0;
+	nav {
+		width: 40%;
+		a {
+			font-size: 2rem;
+			text-decoration: none;
+			color: @linkcolor - 50%;
+			margin-left: 5%;
+			font-family: @linkfont;
+		}
+	}
+}
+.top-content {
+	background-color: lightgray + 20%;
+	margin: 0 5% 0 5%;
+	.selfie {
+		width: 30%;
+		height: 30%;
+	}
+}
+
 
